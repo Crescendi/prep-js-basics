@@ -10,6 +10,14 @@
 * It should be a String.
 **/
 
+var firstName = "Marta";
+console.log(firstName);
+
+var lastName = "Katona";
+console.log(lastName);
+
+var birthPlace = "Kecskemet";
+console.log(birthPlace);
 
 
 /**
@@ -22,6 +30,8 @@
 * Their values should be a Number
 **/
 
+var favoriteNumber = 6;
+console.log(favoriteNumber);
 
 
 /**
@@ -56,7 +66,8 @@
 * which can be found along the west coast of The United States.
 **/
 
-
+var hawaiianIslands = ["Oahu", "Hawaii","Kauai","Lanai", "Molokai","Maui","Kahoolawe","Molokini", "Niihau" ]
+console.log(hawaiianIslands);
 
 /**
 * #5b
@@ -134,6 +145,16 @@
 **/
 
 
+function jump(height) {
+	return "You jumped " + height + " feet height!";
+}
+
+jump();
+
+var joke = jump(12);
+console.log(joke);
+console.log(jump(20));
+
 
 /**
 * #7b
@@ -144,4 +165,14 @@
 * This function should return a String along the lines of, "Tomatoes and Cheese make a Pizza!"
 * if invoked in this way -> cook("Tomatoes", "Cheese", "Pizza");
 **/
+
+
+function cook(ingredient1, ingredient2, recipeName) {
+	return ingredient1 + " and " + ingredient2 + " make a " + recipeName + " !";
+}
+
+var whatWeEat = cook("Tomatoes","Cheese","Pizza");
+console.log(whatWeEat);
+console.log(cook("Prosutto","Pesto"," delicious Ciabatta"));
+console.log(cook(3,5,true));
 
